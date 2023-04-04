@@ -1,8 +1,5 @@
 use std::mem;
 use num_bigint::BigUint;
-
-// use text_io::read;
-
 use rand::Rng;
 
 fn biguint(x: u32) -> BigUint {
@@ -68,8 +65,6 @@ fn find_gcd(a: BigUint, b: BigUint) -> Result<BigUint, String> {
  
 fn main() {
     println!("Start!");
-    // print!("Input: ");
-    // let n: BigUint = read!();
     let n = 314191;
     println!("===== Guessing g");
     let g = biguint(guess_g());
